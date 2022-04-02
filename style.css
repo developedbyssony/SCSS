@@ -2,3 +2,6 @@ p {
   color: blue;
   display: block;
   text-transform: uppercase; }
+
+* {
+  font-family: 'Noto Sans KR', sans-serif; }
