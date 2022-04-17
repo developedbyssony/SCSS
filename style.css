@@ -378,14 +378,18 @@ template {
 
 * {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box; }
 
 html {
-  font-family: 'Noto Sans KR', sans-serif; }
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px; }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif; }
+  font-family: "Noto Sans KR", sans-serif;
+  color: #3DA5F5; }
 
 h1 {
   margin: 0; }
@@ -425,7 +429,116 @@ textarea:focus {
     box-shadow: none;
 }
 */
+/* 디바이스 별 브레이크 포인트
+    MOB
+    * fixture : sm
+    * of columns : 4
+    * unit : 전체 w - (5px * 2) / 4 - 20px
+    * gutter : 20px
+    * margin : 5px
+    * container : 전체 w 100% - (양 옆 5px * 2) 
+
+    SAMLL TABLET ( >= 768)
+    * fixture : md
+    * of columns : 12
+    * gutter : 20px
+    * margin : 30px
+    * container : 전체 w 100% - (양 옆 5px * 2) 
+    * max-container : 960px
+
+    LARGE TABLET ( >= 1024)
+    * fixture : large
+    * of columns : 12
+    * gutter : 20px
+    * margin : auto
+    * container : 960px
+
+    DESKTOP ( >= 1200px)
+    * fixture : large
+    * of columns : 12
+    * unit : 75px
+    * margin : auto
+    * container : 1140px
+    * max-container : 1140px 
+*/
+.container {
+  width: 100%;
+  padding: 0 5px;
+  margin: 0 auto; }
+  .container .row {
+    display: flex;
+    /* 기본값 row */
+    flex-wrap: wrap;
+    /* 5개 컬럼 들어갈 시 아래로 떨어트림 */ }
+  .container [class^='col-'] {
+    padding: 10px; }
+  .container .col-sm-1 {
+    width: 25%; }
+  .container .col-sm-2 {
+    width: 50%; }
+  .container .col-sm-3 {
+    width: 75%; }
+  .container .col-sm-4 {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 960px;
+      padding: 0 30px; }
+      .container .col-md-1 {
+        width: 8.33333%; }
+      .container .col-md-2 {
+        width: 16.66667%; }
+      .container .col-md-3 {
+        width: 25%; }
+      .container .col-md-4 {
+        width: 33.33333%; }
+      .container .col-md-5 {
+        width: 41.66667%; }
+      .container .col-md-6 {
+        width: 50%; }
+      .container .col-md-7 {
+        width: 58.33333%; }
+      .container .col-md-8 {
+        width: 66.66667%; }
+      .container .col-md-9 {
+        width: 75%; }
+      .container .col-md-10 {
+        width: 83.33333%; }
+      .container .col-md-11 {
+        width: 91.66667%; }
+      .container .col-md-12 {
+        width: 100%; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1140px; }
+      .container .col-md-1 {
+        width: 95px; }
+      .container .col-md-2 {
+        width: 190px; }
+      .container .col-md-3 {
+        width: 285px; }
+      .container .col-md-4 {
+        width: 380px; }
+      .container .col-md-5 {
+        width: 475px; }
+      .container .col-md-6 {
+        width: 570px; }
+      .container .col-md-7 {
+        width: 665px; }
+      .container .col-md-8 {
+        width: 760px; }
+      .container .col-md-9 {
+        width: 855px; }
+      .container .col-md-10 {
+        width: 950px; }
+      .container .col-md-11 {
+        width: 1045px; }
+      .container .col-md-12 {
+        width: 1140px; } }
+
 p {
-  line-height: 1; }
+  color: blue; }
+  p .ic-close {
+    width: 40px; }
 
 /*# sourceMappingURL=style.css.map */
