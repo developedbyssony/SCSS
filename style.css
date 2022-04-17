@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* gray scale 분석 */
 @font-face {
   font-family: 'tomorrow';
   src: url("./assets/fonts/tomorrow.eot");
@@ -423,3 +425,7 @@ textarea:focus {
     box-shadow: none;
 }
 */
+p {
+  line-height: 1; }
+
+/*# sourceMappingURL=style.css.map */
