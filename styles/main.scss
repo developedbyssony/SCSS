@@ -1,8 +1,4 @@
-p {
-    color: blue;
-    display: block;
-    text-transform: uppercase;
-}
-* {
-    font-family: 'Noto Sans KR', sans-serif;
-}
+@import './base/fonts';
+@import './base/normalize';
+@import './base/reset';
+
