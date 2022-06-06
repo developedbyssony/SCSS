@@ -45,45 +45,44 @@ $lg-columns: 12;
 $lg-unit: 75px;
 $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
 
-
 .container {
-    width: 100%;
-    padding: 0 $sm-margin;
-    margin: 0 auto;
+  width: 100%;
+  padding: 0 $sm-margin;
+  margin: 0 auto;
 
-.row {
+  .row {
     display: flex; /* 기본값 row */
     flex-wrap: wrap; /* 5개 컬럼 들어갈 시 아래로 떨어트림 */
-}
+  }
 
- [class^='col-'] {
-    padding: $gutter /2;
- }
+  [class^='col-'] {
+    padding: $gutter / 2;
+  }
 
- @for $i from 1 through $sm-columns {
-     .col-sm-#{$i} {
-         width: percentage($i / $sm-columns);
-     }
- } 
+  @for $i from 1 through $sm-columns {
+    .col-sm-#{$i} {
+      width: percentage($i / $sm-columns);
+    }
+  }
 
- @media screen and (min-width: $md-breakpoint) {
+  @media screen and (min-width: $md-breakpoint) {
     max-width: $md-max-container;
     padding: 0 $md-margin;
 
     @for $i from 1 through $md-columns {
-        .col-md-#{$i} {
-            width: percentage($i / $md-columns);
-            }
-        }
+      .col-md-#{$i} {
+        width: percentage($i / $md-columns);
+      }
     }
+  }
 
-    @media screen and (min-width: $lg-breakpoint) {
-        max-width: $lg-max-container;
-    
-        @for $i from 1 through $lg-columns {
-            .col-md-#{$i} {
-                width: ($lg-unit + $gutter) * $i;
-                }
-            }
-        }
+  @media screen and (min-width: $lg-breakpoint) {
+    max-width: $lg-max-container;
+
+    @for $i from 1 through $lg-columns {
+      .col-md-#{$i} {
+        width: ($lg-unit + $gutter) * $i;
+      }
+    }
+  }
 }

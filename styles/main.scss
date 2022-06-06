@@ -4,15 +4,4 @@
 @import './base/normalize';
 @import './base/reset';
 @import './layouts/grids';
-
-@mixin hongsi($color) {
-    color: $color;
-
-    .ic-close {
-        width: 40px;
-    }
-}
-
-p {
-    @include hongsi(blue);
-}
+@import './mixins/text-style';
