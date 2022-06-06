@@ -1,16 +1,8 @@
-@mixin text-style-12($color: false) {
+@mixin text-style-12() {
   font-size: $font-size-12;
   line-height: $line-height-12;
   letter-spacing: $letter-spacing-12;
   color: $color;
-
-  @if (type-of($color) == color) {
-    color: $color;
-  }
-}
-
-p {
-  @include text-style-12;
 }
 
 @mixin text-style-13() {
