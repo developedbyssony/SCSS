@@ -451,6 +451,11 @@ p {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
 /* 디바이스 별 브레이크 포인트
     MOB
     * fixture : sm
