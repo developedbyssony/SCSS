@@ -1,52 +1,53 @@
 * {
-    margin: 0;
-    font-family: $font-main;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
+  margin: 0;
+  font-family: $font-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: $font-main;
-    font-size: $font-size-16;
+  font-family: $font-main;
+  font-size: $font-size-16;
+  word-break: keep-all;
 }
 
 body {
-    font-family: $font-main;
-    color: $primary-color;
+  font-family: $font-main;
+  color: $primary-color;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 button,
 input,
 select,
 textarea {
-    background-color: transparent;
-    border: 0;
+  background-color: transparent;
+  border: 0;
 
-    &:focus {
-        outline: none;
-        box-shadow: none;
-    }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 a,
 button {
-    cursor: pointer;    
+  cursor: pointer;
 }
 
 ul,
 oi {
-    padding-left: none;
-    list-style: none;   
+  padding-left: none;
+  list-style: none;
 }
 
 /*
