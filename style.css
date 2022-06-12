@@ -389,7 +389,7 @@ html {
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  color: #3DA5F5; }
+  color: #3da5f5; }
 
 h1 {
   margin: 0; }
@@ -455,6 +455,89 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
+
+.btn-primary, .btn-secondary, .btn-outlined, .btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  border-radius: 4px; }
+  .btn-primary:disabled, .btn-secondary:disabled, .btn-outlined:disabled, .btn-ghost:disabled {
+    cursor: not-allowed;
+    opacity: 0.4; }
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #3da5f5; }
+  .btn-primary:not(:disabled):hover {
+    background-color: #3186c4; }
+
+.btn-secondary {
+  color: #3da5f5;
+  background-color: #e0e2e7; }
+  .btn-secondary:not(:disabled):hover {
+    background-color: #b2b3b9; }
+
+.btn-outlined {
+  color: #3da5f5;
+  background-color: #ffffff;
+  border: 1px solid #3da5f5; }
+  .btn-outlined:not(:disabled):hover {
+    background-color: #ecf6fe; }
+
+.btn-ghost {
+  color: #3da5f5;
+  background-color: transparent; }
+  .btn-ghost:not(:disabled):hover {
+    color: #b2b3b9; }
+
+.btn-32 {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  height: 32px; }
+
+.btn-40 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  height: 40px; }
+
+.btn-48 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  height: 48px; }
+
+.btn-55 {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  height: 55px; }
+
+.tag-red, .tag-green, .tag-gray {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-weight: 700; }
+
+.tag-red {
+  color: #ffffff;
+  background-color: #f86d7d; }
+
+.tag-green {
+  color: #ffffff;
+  background-color: #22c58b; }
+
+.tag-gray {
+  color: #8c8d96;
+  background-color: #e0e2e7; }
 
 /* 디바이스 별 브레이크 포인트
     MOB
