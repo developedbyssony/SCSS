@@ -14,13 +14,11 @@
 .section {
   @include responsive(T) {
     font-size: 10px;
-    color: red;
     .ic-close {
       font-size: 20px;
     }
   }
 
   @include responsive(D) {
-    color: blue;
   }
 }

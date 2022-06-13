@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* gray scale 분석 */
 @font-face {
   font-family: 'tomorrow';
   src: url("./assets/fonts/tomorrow.eot");
@@ -379,7 +378,6 @@ template {
 * {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box; }
 
@@ -437,14 +435,9 @@ p {
 
 @media screen and (min-width: 768px) {
   .section {
-    font-size: 10px;
-    color: red; }
+    font-size: 10px; }
     .section .ic-close {
       font-size: 20px; } }
-
-@media screen and (min-width: 1200px) {
-  .section {
-    color: blue; } }
 
 .modal {
   position: absolute;
@@ -468,7 +461,7 @@ p {
     opacity: 0.4; }
 
 .btn-primary {
-  color: #ffffff;
+  color: #fff;
   background-color: #3da5f5; }
   .btn-primary:not(:disabled):hover {
     background-color: #3186c4; }
@@ -481,7 +474,7 @@ p {
 
 .btn-outlined {
   color: #3da5f5;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #3da5f5; }
   .btn-outlined:not(:disabled):hover {
     background-color: #ecf6fe; }
@@ -525,15 +518,15 @@ p {
   letter-spacing: -0.005em;
   height: 20px;
   padding: 0 6px;
-  border-radius: 4px;
-  font-weight: 700; }
+  font-weight: 700;
+  border-radius: 4px; }
 
 .tag-red {
-  color: #ffffff;
+  color: #fff;
   background-color: #f86d7d; }
 
 .tag-green {
-  color: #ffffff;
+  color: #fff;
   background-color: #22c58b; }
 
 .tag-gray {
@@ -552,8 +545,7 @@ p {
 
 .avatar-test {
   width: 32px;
-  height: 32px;
-  background-color: pink; }
+  height: 32px; }
 
 .avatar-24 {
   width: 24px;
@@ -562,6 +554,88 @@ p {
 .avatar-32 {
   width: 32px;
   height: 32px; }
+
+.star-rating-13, .star-rating-20, .star-rating-24 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .star-rating-13 .ic-start, .star-rating-20 .ic-start, .star-rating-24 .ic-start {
+    color: #e0e2e7; }
+    .star-rating-13 .ic-start.is-active, .star-rating-20 .ic-start.is-active, .star-rating-24 .ic-start.is-active {
+      color: #3da5f5; }
+
+.star-rating-13 {
+  font-size: 13px; }
+
+.star-rating-20 {
+  font-size: 20px; }
+
+.star-rating-24 {
+  font-size: 24px; }
+
+.price-16,
+.price-20,
+.price-32, .price-off {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .price-16 .amount, .price-20 .amount, .price-32 .amount, .price-off .amount {
+    font-family: "Tahoma", sans-serif;
+    line-height: 1; }
+  .price-16 .currency, .price-20 .currency, .price-32 .currency, .price-off .currency {
+    font-family: "Noto Sans KR", sans-serif; }
+
+.price-16,
+.price-20,
+.price-32 {
+  color: #000; }
+  .price-16 .amount,
+  .price-20 .amount,
+  .price-32 .amount {
+    font-weight: 700;
+    letter-spacing: -0.02em; }
+  .price-16 .currency,
+  .price-20 .currency,
+  .price-32 .currency {
+    font-weight: bold; }
+
+.price-16 .amount {
+  font-size: 16px; }
+
+.price-16 .currency {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em; }
+
+.price-20 .amount {
+  font-size: 20px; }
+
+.price-20 .currency {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em; }
+
+.price-32 .amount {
+  font-size: 32px; }
+
+.price-32 .currency {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em; }
+
+.price-off {
+  color: #8c8d96; }
+  .price-off .amount {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    text-decoration: line-through; }
+  .price-off .currency {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    font-size: 400; }
 
 /* 디바이스 별 브레이크 포인트
     MOB
