@@ -637,6 +637,53 @@ p {
     letter-spacing: -0.01em;
     font-size: 400; }
 
+input, .form-select,
+.form-input {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3da5f5;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #fff;
+  border: 1px solid #e0e2e7;
+  border-radius: 4px;
+  transition: background-color 200ms ease-in-out;
+  appearance: none; }
+  input::placeholder, .form-select::placeholder,
+  .form-input::placeholder {
+    color: #b2b3b9;
+    background-color: #fff; }
+  input:not(:disabled):hover, .form-select:not(:disabled):hover,
+  .form-input:not(:disabled):hover {
+    background-color: #f7f8fa; }
+  input:disabled, .form-select:disabled,
+  .form-input:disabled {
+    cursor: not-allowed;
+    opacity: 0.4; }
+
+.form-select {
+  padding-right: 40px;
+  text-overflow: ellipsis; }
+
+.select-group {
+  position: relative; }
+  .select-group.is-active .form-select {
+    border-color: #3da5f5; }
+  .select-group.is-active .ic-caret {
+    color: #3da5f5; }
+  .select-group .ic-caret {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 8px;
+    font-size: 24px;
+    color: #b2b3b9;
+    pointer-events: none; }
+
 /* 디바이스 별 브레이크 포인트
     MOB
     * fixture : sm

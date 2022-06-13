@@ -17,7 +17,7 @@
   @extend %btn-base;
   color: $white;
   background-color: $primary-color;
-
+  // state
   &:not(:disabled):hover {
     background-color: $primary-color-dark;
   }
@@ -27,7 +27,7 @@
   @extend %btn-base;
   color: $primary-color;
   background-color: $gray-border;
-
+  // state
   &:not(:disabled):hover {
     background-color: $gray-tertiary;
   }
@@ -38,7 +38,7 @@
   color: $primary-color;
   background-color: $white;
   border: 1px solid $primary-color;
-
+  // state
   &:not(:disabled):hover {
     background-color: $primary-color-light;
   }
@@ -48,14 +48,13 @@
   @extend %btn-base;
   color: $primary-color;
   background-color: transparent;
-
+  // state
   &:not(:disabled):hover {
     color: $gray-tertiary;
   }
 }
 
 // size
-
 .btn-32 {
   @include text-style(14);
   height: 32px;
@@ -75,5 +74,3 @@
   @include text-style(18);
   height: 55px;
 }
-
-// state
