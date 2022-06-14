@@ -637,12 +637,12 @@ p {
     letter-spacing: -0.01em;
     font-size: 400; }
 
-input, .form-select,
-.form-input {
+select,
+input {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
-  color: #3da5f5;
+  color: #000;
   display: block;
   width: 100%;
   height: 40px;
@@ -652,15 +652,15 @@ input, .form-select,
   border-radius: 4px;
   transition: background-color 200ms ease-in-out;
   appearance: none; }
-  input::placeholder, .form-select::placeholder,
-  .form-input::placeholder {
+  select::placeholder,
+  input::placeholder {
     color: #b2b3b9;
     background-color: #fff; }
-  input:not(:disabled):hover, .form-select:not(:disabled):hover,
-  .form-input:not(:disabled):hover {
+  select:not(:disabled):hover,
+  input:not(:disabled):hover {
     background-color: #f7f8fa; }
-  input:disabled, .form-select:disabled,
-  .form-input:disabled {
+  select:disabled,
+  input:disabled {
     cursor: not-allowed;
     opacity: 0.4; }
 
@@ -676,13 +676,80 @@ input, .form-select,
     color: #3da5f5; }
   .select-group .ic-caret {
     position: absolute;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    position: absolute;
     right: 8px;
     font-size: 24px;
     color: #b2b3b9;
     pointer-events: none; }
+
+.input-group {
+  position: relative; }
+  .input-group .form-input {
+    padding-left: 40px; }
+  .input-group .ic-search {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 20px;
+    color: #b2b3b9; }
+
+.pagination .page-control, .pagination .page-item a,
+.pagination .page-item button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #000;
+  height: 26px;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #fff; }
+
+.pagination {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; }
+  .pagination .page-control {
+    border: 1px solid #e0e2e7;
+    width: 26px; }
+    .pagination .page-control.page-prev {
+      margin-right: 24px; }
+      .pagination .page-control.page-prev .ic-chevron {
+        transform: rotate(90deg); }
+    .pagination .page-control.page-next {
+      margin-left: 24px; }
+      .pagination .page-control.page-next .ic-chevron {
+        transform: rotate(-90deg); }
+    .pagination .page-control .ic-chevron {
+      font-size: 20px; }
+    .pagination .page-control:hover {
+      opacity: 0.4; }
+  .pagination .page-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; }
+  .pagination .page-item {
+    margin-right: 4px; }
+    .pagination .page-item.is-active a,
+    .pagination .page-item.is-active button {
+      color: #fff !important;
+      background-color: #3da5f5; }
+    .pagination .page-item:last-child {
+      margin-right: 0; }
+    .pagination .page-item a,
+    .pagination .page-item button {
+      min-width: 26px;
+      padding: 0 4px; }
+      .pagination .page-item a:hover,
+      .pagination .page-item button:hover {
+        color: #3da5f5; }
 
 /* 디바이스 별 브레이크 포인트
     MOB
